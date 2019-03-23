@@ -1,7 +1,7 @@
 
 body {
 	background-color: white;
-	width: 240px;
+	width: 242px;
 	max-height: 310px;
 	text-align: center;
 	margin: 0px;
@@ -14,7 +14,7 @@ body {
 	padding-left: 5px;
 	box-shadow: inset 0px 0px 1px #d9d9d9;
 	font-size: 13px;
-	width: 145px;
+	width: 150px;
 	height: 25px;
 	border-radius: 4px;
 	border: 1px solid #C4C4C4;
@@ -50,16 +50,19 @@ body {
 }
 
 #searchButton {
-  padding: 3px 15px 5px 15px;
+	margin-top: 5px;
+  padding: 3px 13px 5px 13px;
   border-radius: 5px;
 }
 
 #playerButton {
-  padding: 3px 12px 5px 12px;
+	margin-left: 1px;
+  padding: 5px 12px 5px 12px;
   border-radius: 5px;
 }
  
 #gachalogButton {
+	margin-top: 5px;
 	margin-left: 2px;
   padding: 3px 13px 5px 13px;
   border-radius: 5px;
@@ -68,16 +71,26 @@ body {
 #CoolStuffButton, #TCGPlayerButton, #CardMarketButton {
 	margin-bottom: 1px;
 	margin-left: 1px;
-  padding: 4px 25px;
+	padding: 4px 6px;
+	background-image: -webkit-linear-gradient(rgba(0, 119, 255, 0.973),rgba(0, 119, 255, 0.973));
   border-radius: 5px;
 	display: none;
 }
 
 
-#searchButton:hover, #CoolStuffButton:hover, #TCGPlayerButton:hover, #CardMarketButton:hover, #playerButton:hover, #gachalogButton:hover{
+#searchButton:hover, #playerButton:hover, #gachalogButton:hover{
   background-image: -webkit-linear-gradient(#FF0000,#FF4500);
 }
 
-#searchButton:active, #CoolStuffButton:active, #TCGPlayerButton:active, #CardMarketButton:active, #playerButton:active, #gachalogButton:active {
+#searchButton:active, #playerButton:active, #gachalogButton:active {
 	background-image: -webkit-linear-gradient(#B22222,#DC143C);
+}
+
+
+#CoolStuffButton:hover, #TCGPlayerButton:hover, #CardMarketButton:hover{
+	background-image: -webkit-linear-gradient(rgba(0, 119, 255, 0.973),rgb(0, 47, 255));
+}
+
+#CoolStuffButton:active, #TCGPlayerButton:active, #CardMarketButton:active{
+	background-image: -webkit-linear-gradient(rgba(0, 119, 255, 0.973),rgb(0, 47, 255));
 }
