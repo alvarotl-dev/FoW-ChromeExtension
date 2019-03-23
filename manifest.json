@@ -1,8 +1,8 @@
 {
 	"manifest_version": 2,
 	"name": "FoW Quick Search",
-	"version": "1.0.1",
-	"description": "Quick access to your fowsystem.com account. Search for cards on CoolStuffInc, TGCPlayer and CardMarket. Enter a gachalog code and check a deck. Credits for austin0crutchfield on GitHub.",
+	"version": "1.0.2",
+	"description": "Quick access to your fowsystem.com account. Search for cards on CoolStuffInc, TGCPlayer and CardMarket. Enter a gachalog code and check a deck. Created by AbsydeAuberon on github.",
 	"browser_action": {
 		"default_popup": "popup.html",
 		"default_title": "FoW Quick Search"

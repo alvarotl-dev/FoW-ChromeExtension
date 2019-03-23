@@ -35,7 +35,11 @@ document.getElementById("playerButton").onclick = function() {
 document.getElementById("gachalogButton").onclick = function() {
 	isGachalogCode = true;
 	parseInformation()
-	chrome.tabs.create({ url: "https://www.gachalog.com/list/" + document.getElementById("cardImage").alt});
+	
+	if(document.getElementById("cardImage").alt == "")
+		chrome.tabs.create({ url: "https://www.gachalog.com/"});
+	else
+		chrome.tabs.create({ url: "https://www.gachalog.com/list/" + document.getElementById("cardImage").alt});
 };
 
 document.getElementById("CoolStuffButton").onclick = function() {
