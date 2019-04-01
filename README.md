@@ -9,6 +9,7 @@ Easy to use Force Of Will chrome extension to search for cards or decks on gacha
 3. Check "Developer mode" box. 
 4. Click "Load unpacked extension". 
 5. Select FoW-ChromeExtension folder and click "OK".
+#### UPDATE: I've published it in the Chrome Web Store: https://chrome.google.com/webstore/detail/fow-quick-search/ijimajhcmmfpeafgcggggijhhkeiofgk
 
 ## How to use:
 Put the text on the box and press enter. You will be redirected to CardMarket. If you want to check other pages, put the text and click on "Find on Store".
