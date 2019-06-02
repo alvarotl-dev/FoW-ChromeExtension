@@ -11,16 +11,16 @@ window.onload = function(){		//Open the extension with the text box already
 function parseInformation() {	//Parse the information on the checkbox to an alternate text of an HTML element
 
 	var specialCharacters = [["æ", "ae"], ["â", "a"], ["á", "a"], ["à", "a"], ["é", "e"], ["ö", "o"], ["û", "u"], ["ú", "u"]];
-	var cardName = document.getElementById("searchBox").value.toLowerCase();
+	var searchText = document.getElementById("searchBox").value.toLowerCase();
 	
 	//Store card name in alt
-	document.getElementById("searchBox").alt = cardName;
+	document.getElementById("searchBox").alt = searchText;
 
 	//Replace special characters
-	for(var i = 0; i < cardName.length; i++) {
+	for(var i = 0; i < searchText.length; i++) {
 		for(var n = 0; n < specialCharacters.length; n++) {
-			if(cardName[i] == specialCharacters[n][0]) {
-				cardName = cardName.replace(cardName[i], specialCharacters[n][1]);
+			if(searchText[i] == specialCharacters[n][0]) {
+				searchText = searchText.replace(searchText[i], specialCharacters[n][1]);
 			}
 		}
 	}
@@ -46,7 +46,7 @@ function displayButtons(isDisplayed){	//Display or hide the lower shop buttons
 
 
 function isGachalog(){	//First, parse to an integer the text of the box and check if is a Number and after if that number is 8 digits long, you get that's a gachalog code.  
-	return (parseInt(document.getElementById("searchBox").alt) != NaN && parseInt(document.getElementById("searchBox").alt).toString().length == 8)
+	return (parseInt(document.getElementById("searchBox").alt) != NaN && parseInt(document.getElementById("searchBox").alt).toString().length <= 8)
 }
 
 
@@ -112,3 +112,4 @@ document.getElementById("searchBox").onkeypress = function(key) {
 
 	}
 };
+
